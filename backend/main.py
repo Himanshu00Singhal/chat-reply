@@ -5,7 +5,7 @@ from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 import os
-os.environ['GROQ_API_KEY']="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"
+os.environ['GROQ_API_KEY']=""
 app = FastAPI()
 
 class ChatRequest(BaseModel):
