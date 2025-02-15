@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT WhatsApp Assistant",
+    "version": "1.0",
+    "description": "AI-powered chat assistant for WhatsApp Web",
+    "permissions": ["activeTab", "storage"],
+    "host_permissions": ["https://web.whatsapp.com/"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
