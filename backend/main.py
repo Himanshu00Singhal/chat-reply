@@ -15,7 +15,6 @@ class ChatRequest(BaseModel):
 def generate_reply(request: ChatRequest):
     try:
         # openai.api_key = "your-openai-api-key"
-        GROQ_API_KEY="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"
         # response = openai.ChatCompletion.create(
         #     model="gpt-4",
         #     messages=[{"role": "user", "content": request.chat_text}]
